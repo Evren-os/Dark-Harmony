@@ -242,23 +242,13 @@
 }
 
 /*------------ COMPONENT INSIDE URLBAR ------------*/
-/* TODO: Fix some incosistency */
 
 /* Hide Some Icons */
 #userContext-icons,
-#star-button-box,
 #identity-icon-box,
+#star-button-box,
 #urlbar-zoom-button {
   display: none !important;
-}
-#star-button-box {
-  display: flex !important;
-  width: 24px !important;
-  height: 36px !important;
-  padding-inline: 4px !important;
-  align-content: center !important;
-  justify-content: center !important;
-}
 }
 
 /* Left Info */
@@ -274,25 +264,26 @@
   width: 24px !important;
   border-radius: 0px !important;
 }
+
+/* Compact page action */
 #page-action-buttons {
-  display: none;
-  width: 24px;
-  margin: 0px -4px 0px 0px !important;
-  padding: 0px !important;
+  max-width: 30px !important;
+  height: 32px !important;
   flex-wrap: wrap;
-  overflow: auto !important;
+  margin-right: -3px;
+  overflow: scroll;
 }
-#page-action-buttons > .urlbar-page-action {
-  margin: 0px !important;
-  width: 24px !important;
+#page-action-buttons > hbox {
+  width: 32px !important;
   height: 100% !important;
-  border-radius: 0px 0px 0px 0px !important;
+  border-radius: 0px !important;
 }
-#urlbar:hover #page-action-buttons {
-  display: block;
-}
-#page-action-buttons:nth-child(1) {
-  outline: 1px red solid !important;
+#urlbar:hover #star-button-box {
+  display: flex !important;
+  width: 32px !important;
+  height: 100% !important;
+  align-content: center !important;
+  justify-self: center !important;
 }
 
 /*------------ BUTTONS ABOVE URL BAR ------------*/
