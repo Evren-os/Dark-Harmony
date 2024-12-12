@@ -277,12 +277,14 @@
   overflow: scroll;
 }
 #page-action-buttons > hbox {
+  background: color-mix(in srgb, var(--tab-group-color-gray-invert) 15%, transparent) !important;
   width: 32px !important;
   height: 100% !important;
   border-radius: 0px !important;
 }
 #urlbar:hover #star-button-box {
   display: flex !important;
+  background: color-mix(in srgb, var(--tab-group-color-gray-invert) 15%, transparent) !important;
   width: 32px !important;
   height: 100% !important;
   align-content: center !important;
