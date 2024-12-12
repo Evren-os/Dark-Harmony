@@ -1,4 +1,4 @@
-# Zen-Theme
+# Dark Harmony
 <p align="center" width="100%"><img alt="alt_text" width="700px" src="assets/Preview.png" /></p>
 
 ## 💾 Prerequisite
