@@ -17,11 +17,11 @@ Enable them for a better experience/aesthetics.
 
 ## ✨ Features
 
-| Features                                                                                              	| Preview 	|
-|-------------------------------------------------------------------------------------------------------	|---------	|
-| **Cleaner Tab**                                                                                           	|         	|
-| **Workspace Indicators**<br>- Shown on `selected tabs` & `media`                                          	  |         	|
-| **Coloured Essentials**                                                                                   	|         	|
+| Features                                                                                              	    | Preview 	|
+|-------------------------------------------------------------------------------------------------------	    |---------	|
+| **Cleaner Tab**                                                                                           	|<img alt="alt_text" width="340px" src="assets/Compact Tabs.png" />|
+| **Workspace Indicator**<br>- Shown on `selected tabs` & `media`                                          	|<img alt="alt_text" width="340px" src="assets/Workspace Indicator.png" />         	|
+| **Coloured Essentials**                                                                                   	|<img alt="alt_text" width="340px" src="assets/Coloured Essentials.png" />         	|
 | **Compact URL Bars**<br>   - Thinner URL Bars<br>   - Scrollable actionmedia                              	|         	|
 | **Sleek Playing/Mute Indicator**<br>   - Animated Icons<br>   - `Playing` : Coloured<br>   - `Mute` : Dim 	|         	|
 
