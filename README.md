@@ -2,6 +2,8 @@
 > [!WARNING]
 > Only Works on Zen Twilight and might break on other builds.
 
+<p align="center" width="100%"><img alt="alt_text" width="700px" src="assets/Preview.png" /></p>
+
 ## 💾 Prerequisite
 Enable them for a better experience/aesthetics.
 
