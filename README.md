@@ -1,10 +1,11 @@
 # Zen-Theme
-> [!WARNING]
-> Only Works on Zen Twilight and might break on other builds.
-
 <p align="center" width="100%"><img alt="alt_text" width="700px" src="assets/Preview.png" /></p>
 
 ## 💾 Prerequisite
+
+> [!WARNING]
+> Only Works on Zen Twilight and might break on other builds.
+
 Enable them for a better experience/aesthetics.
 
 | Features   | Details                  | Links                                             |
