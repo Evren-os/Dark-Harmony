@@ -23,12 +23,11 @@ Enable them for a better experience/aesthetics.
 
 | Features                                                                                              	    | Preview 	|
 |-------------------------------------------------------------------------------------------------------	    |---------	|
+| **Compact URL Bars**<br>   - Thinner URL Bars<br>   - Scrollable actionmedia                              	|<img alt="alt_text" width="340px" src="assets/CompactURL.gif" />|
 | **Cleaner Tab**                                                                                           	|<img alt="alt_text" width="340px" src="assets/Compact Tabs.png" />|
-| **Workspace Indicator**<br>- Shown on `selected tabs` & `media`                                          	|<img alt="alt_text" width="340px" src="assets/Workspace Indicator.png" />         	|
-| **Sleek Playing/Mute Indicator**<br>   - Animated Icons<br>   - `Playing` : Coloured<br>   - `Mute` : Dim 	|<img alt="alt_text" width="340px" src="assets/Media Indicator.gif" />         	|
-| **Coloured Essentials**                                                                                   	|<img alt="alt_text" width="340px" src="assets/Coloured Essentials.png" />         	|
-| **Compact URL Bars**<br>   - Thinner URL Bars<br>   - Scrollable actionmedia                              	|         	|
-
+| **Workspace Indicator**<br>- Shown on `Selected tabs` & `Media Tabs`                                        |<img alt="alt_text" width="340px" src="assets/Workspace Indicator.png" />|
+| **Sleek Playing/Mute Indicator**<br>   - Animated Icons<br>   - `Playing` : Coloured<br>   - `Mute` : Dim 	|<img alt="alt_text" width="340px" src="assets/Media Indicator.gif" />|
+| **Coloured Essentials**                                                                                   	|<img alt="alt_text" width="340px" src="assets/Coloured Essentials.png" />|
 
 ## 🐞 Known Bugs / Work in Progress
 - `Coloured Essentials` : Having per-workspace essentials messed up the colour positioning
