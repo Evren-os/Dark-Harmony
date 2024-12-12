@@ -10,7 +10,7 @@ Enable them for a better experience/aesthetics.
 
 | Features   | Details                  | Links                                             |
 | ---        | -------------            | -------------                                     |
-| Font       | `Switzer`                | [Switzer](https://www.fontshare.com/?q=Switzer)   |
+| Font       | `Switzer`                | [Switzer](https://www.fontshare.com/fonts/switzer)   |
 | Extensions | `Tabnine`                | [Tabnine](https://addons.mozilla.org/en-US/firefox/addon/tab-nine/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)|
 | Zen Mods   | `Superpins`              |                                                   |
 | Zen Mods   | `Bottom Essentials`      |                                                   |
