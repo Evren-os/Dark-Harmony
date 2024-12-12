@@ -1,4 +1,6 @@
 # Zen-Theme
+> [!WARNING]
+> Only Works on Zen Twilight and might break on other builds.
 
 ## 💾 Prerequisite
 Enable them for a better experience/aesthetics.
