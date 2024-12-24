@@ -16,15 +16,7 @@
 }
 
 /*------------ BACKGROUND TRANSPARENCY ------------*/
-#navigator-toolbox {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-#main-window {
-  background-color: rgba(1, 1, 1, 0.8) !important;
-  -moz-appearance: none !important;
-  background-image: none !important;
-  --zen-main-browser-background: rgba(0, 0, 0, 0.9) !important;
-}
+
 /* Window controls shadowing fix by @taroj1205 */
 #zen-sidebar-splitter {
   opacity: 0 !important;
@@ -70,43 +62,6 @@
   align-self: center !important;
   margin: 1px !important;
   border-radius: 4px !important;
-}
-
-/*------------ COLLAPSIBLE TOP BAR ------------*/
-:root[zen-single-toolbar="true"]:not([customizing]) {
-  & #zen-appcontent-navbar-container {
-    &:has(#PersonalToolbar[collapsed="false"]) {
-      @media (-moz-bool-pref: "zen.view.hide-window-controls") {
-        & {
-          transition: height 0.2s ease-out, opacity 0.2s ease-out;
-          transition-delay: 0s, 0s;
-          transition-delay: 0.05s;
-        }
-      }
-    }
-  }
-}
-/* Top Bar Collapse */
-:root[zen-single-toolbar="true"]:not([customizing]) {
-  & #zen-appcontent-navbar-container {
-    &:has(#PersonalToolbar[collapsed="false"]) {
-      @media (-moz-bool-pref: "zen.view.hide-window-controls") {
-        &:not([zen-has-hover="true"]):not([has-popup-menu]):not(:focus-within) {
-          transition-delay: 0.2s;
-          height: 8px !important;
-          overflow: hidden;
-          opacity: 0;
-        }
-      }
-    }
-  }
-}
-:root[zen-single-toolbar="true"]:not([customizing]) {
-  & #zen-appcontent-navbar-container {
-    &:has(#PersonalToolbar[collapsed="false"]) {
-      height: 34px !important;
-    }
-  }
 }
 
 /*------------ WINDOWS CONTROL (MIN-MAX-CLOSE) ------------*/
@@ -183,7 +138,7 @@
 
 /* for moving the URL bar */
 #nav-bar {
-  margin-top: -5px !important; /* Reposition URL Bar*/
+  margin-top: 0px !important; /* Reposition URL Bar*/
   width: 100% !important;
   margin-inline: 0px !important;
   align-self: center !important;
@@ -290,8 +245,8 @@
 #zen-sidebar-top-buttons,
 #zen-sidebar-top-buttons-customization-target {
   & toolbarbutton:not(.titlebar-button) {
-    padding: 0px !important;
-    margin-top: -4px !important;
+    padding: 1px !important;
+    margin-top: 0px !important;
   }
 }
 #unified-extensions-button {
@@ -321,7 +276,7 @@
 }
 /* Premid */
 #support_premid_app-BAP {
-  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABvUlEQVR4nO3UTYhNcRjH8eNlQ9PsjBk7r1NKNl6G2Eu2smMnNsoSJctZKFnYEAs7QjbIZrZTRsxKKImwwHLktT765z88Tv/7cq7mLnS/det0fs/v+d3/8+88VTVgQFVVWIYt2N1qIEnLNcv/aWgYwXFM44dffMdoi9qkybXT2TvSJHAJTmDOHz7hBo6VmmFF1m7m2nlSj5OpZzfBZ4PxJY5gqMEfH8LR7J1nspNpXRhZYmXQJnAGU3iWTzOXn6eyNhHqR0Ofr1jd7WkTp3AYs7pnNk/pdO39ZKvQpXhn4XhbvGvstfDsKQVf6UPw5VLwiz4EP6+HrupgeIA1WIuHPeiRsRh8QHu2htrtPeiR/TH4vPb83r/puQc9ci4G39WebbVF0lSP3InBT7VnJm+19S3usJMeeRKDP+of72Pwl0LBTmzE9dr+7kSqvZa9uwr65xhcGk9c+GM4hKt4jA/4ln/p+VHWDsbPBTsKfWdicLqf17WC1PQCNlQNwXj2ph6RV+l7Ly2R2y3Gl065uYvATbm2xK2/lkfBnBbAJbwJpvtY3EXwItwLvtTjYlwwTUa2D8MNPMPZM94obMB/x0+gqs/sLzXfTwAAAABJRU5ErkJggg==") !important;
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAERUlEQVR4nO2YW4hWVRTHPy94GUUdtEgHxmt4oTRnvJTipRIflB7K8EVNCAoS1AfBhPBCTV7KGwiFKJg9SSpdlKQos5KmMhWli0WDOuAFwynUcdSZ8RcL15E1233O7PN9Mypy/k/ft89a/7X23muvvfbK5TJkyJAhw90E0AeYB+wETgP/AvuB51NwzAC+Ud3TyvUa0Lu1nG4DTAe+BhqJR0UA18oE/UbgK2Ca2Gwp558ADhOOsQlcT6Xg+QUYUajz84EbnlWS7V8APC7bDuwx37cn8G03cp+q7mPAQuBbz+6K7UX5Ot8BaDBktcAGoK8j1wNYYuSuAVVAjf6+pr+r9HeE10XX4eoPbALqnInMzncScjjRFR9oxgcAK4BKZ5Jp0QD8ACwXTsM/WLkjXAR65jOB9kCp+V8G7G3mIOeLRg3FMrXVC/jHfF+a1y4Y51cBN2NWUQ7cOuAlYCLQDyjWBWivv2Vsksqs18TQ4OETGyvVppyzCOeAjiGOPgn8CXwGdNKxtk5cNuhqST7vXsCidAde9OxqndosAi6Y8bkhpAeNwkQzvhG4AuwAhubrdILdYcotNjaY8TeMP981R1JqwqRe4jB3jwE8pL5E56QkSXixme3nufsEwJfGrwVJgodSxdtdAvCK8etgnFAvc5Dq3UvmXoJbvtkwetgnJNkgwo+5+wzA98a/Oytf4D0jsCpFofezlghHpVgL0Hka+FV1fhKOQFu2il3rE/jDCEwNIByo9ZHF9aQKEhjvubyuAoMC7E2PjRCgi4l/SaPdAgi34ccnCToHYnQ+DLBXbHyUKrXIfhxlyE41R6Y6v8U4czZGvq1nxyL8FWjz+G0Nu9OSMs2HvYFkx/CjOmECcssWMoG5GoJHgM72wzuGbE0g2fsxzuxI0JGyPK8QigB0lcVwBz8yZK/mwh/3UqdbXAYeTdAZZ/J5hFr71miJq3pGCr3+WrVWA1+EFHnAZI1lqTgrC373Kqnk4wjPeHJ9leb7oJxdoC8j9ZV2AhgeqiT1f4QmK6IPlQhygD6QlW8Fxwfoo9/eE+965GYCHzdZaEl9RukFR0FS7CUnbm9oM+q5JtkgvdOdlWOnp/shNsc48hPMBE/YD7uN4n/2IWNWZx9+1GkzqgKYBZTru6LYuYRKdTFmqaw0ydzuQ4R99pGvHOXOG3m3/ViirQ9bElS4qws8azoVrYH9YsPT3lnmtGQu3vGw0TpF0qDF31qLd3Fkh6Ts1jWHw8LpCa+XPTe+hNa4uJgcDZz0GJAm7GY5H5r/5zj5fAvwNrBLU2S1s6M1OnZc411kt5rv9cpZojY2O/oRJBuWxxypJp22TZ4LJw7SEmyXSOq3004e6YE26rWpEN4BkRYi8JaToVxIrn4krfPGRm+pgxL4zwBv2uZaPkakMTUVWC11OHBe3w6rW+LZya0dF67ftXlVqU20KWK7UP4MGTJkyPBg43/zVtyIwFODswAAAABJRU5ErkJggg==") !important;
   .toolbarbutton-badge {
     margin-top: -4px !important;
     scale: 0.9;
@@ -491,8 +446,8 @@
   .tabbrowser-tab:is([pinned]) .tab-background {
     background-color: color-mix(in srgb, var(--tab-group-color-gray-invert) 4%, transparent) !important;
     border: 1px solid color-mix(in srgb, var(--tab-group-color-gray-invert) 14%, transparent) !important;
-    border-left: 28px solid color-mix(in srgb, var(--tab-group-color-gray-invert) 14%, transparent) !important;
-    border-radius: 4px !important;
+    /*border-left: 28px solid color-mix(in srgb, var(--tab-group-color-gray-invert) 14%, transparent) !important;
+    */border-radius: 4px !important;
     margin: 2px 2px !important;
   }
 
@@ -535,7 +490,6 @@
   [multiselected]) .tab-background {
     background-color: color-mix(in srgb, var(--identity-tab-color, var(--tab-group-color-gray-invert)) 15%, transparent) !important;
     border: 1px solid color-mix(in srgb, var(--identity-tab-color, var(--tab-group-color-gray-invert)) 20%, transparent) !important;
-    border-left: 28px solid color-mix(in srgb, var(--identity-tab-color, var(--tab-group-color-gray-invert)) 20%, transparent) !important;
   }
 }
 
@@ -595,7 +549,7 @@
 /* B. For Essentials */
 #zen-essentials-container {
   .tab-icon-overlay:is([soundplaying], [muted]) {
-    margin: 0px !important;
+    margin: 10px !important;
   }
   .tabbrowser-tab:is([soundplaying],
   [muted],
@@ -609,7 +563,6 @@ tab-group {
   display: grid !important;
   background: color-mix(in srgb, var(--tab-group-color-invert) 4%, transparent) !important;
   border: 1px solid color-mix(in srgb, var(--tab-group-color-invert) 14%, transparent) !important;
-  border-left: 28px solid color-mix(in srgb, var(--tab-group-color-invert) 14%, transparent) !important;
   border-radius: 4px;
   margin: 2px 2px 2px 2px !important;
   margin-inline:2px !important;
@@ -619,8 +572,8 @@ tab-group {
   overflow: hidden !important;
   & tab {
     transition: opacity 0.5s ease !important;
-    left: -32px !important;
-    width: calc(100% + 36px) !important;
+    margin-left: 5px !important;
+    width: calc(95%) !important;
   }
   & > vbox {
     padding-top: 2px !important;
