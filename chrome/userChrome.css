@@ -51,6 +51,16 @@
   }
 }
 
+/* manipulating the overall sidebar */
+#navigator-toolbox {
+  padding-inline: 4px !important;
+}
+
+/* manipulating the element under urlbar  */
+#titlebar {
+  margin-inline: 0px !important;
+}
+
 /*------------ BOOKMARKS ------------*/
 #personal-bookmarks toolbarbutton.bookmark-item {
   background-color: var(--zen-colors-tertiary) !important;
