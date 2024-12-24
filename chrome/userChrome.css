@@ -50,6 +50,7 @@
 
 /* manipulating the element under urlbar  */
 #titlebar {
+  padding: 0px !important;
   margin-inline: 0px !important;
 }
 
